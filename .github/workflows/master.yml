@@ -15,7 +15,6 @@ jobs:
   publish_docker:
     name: Publish to Docker Hub
     uses: ./.github/workflows/publish_docker.yml
-    needs: test
     with:
       tag: latest
     secrets:
