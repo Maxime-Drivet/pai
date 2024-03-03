@@ -19,3 +19,4 @@ requests>=2.20.0
 require-python-3
 tox
 ws4py>=0.4.2
+pytest
