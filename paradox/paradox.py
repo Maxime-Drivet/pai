@@ -121,7 +121,7 @@ class Paradox:
         self.panel = None
 
         self.run_state = RunState.INIT
-        logger.info("Connecting to interface (MDR)")
+        logger.info("Connecting to interface (MDR:" + cfg.IO_TIMEOUT + ")")
         if not await self.connection.connect():
             self.run_state = RunState.ERROR
             logger.error("Failed to connect to interface")
