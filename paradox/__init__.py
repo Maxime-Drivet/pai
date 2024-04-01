@@ -1,3 +1,3 @@
-VERSION = "3.3.0-dev"
+VERSION = "3.4.0"
 
 __version__ = VERSION

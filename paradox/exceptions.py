@@ -1,4 +1,5 @@
 import logging
+import pytest
 
 logger = logging.getLogger("PAI").getChild(__name__)
 
@@ -45,7 +46,7 @@ class PanelNotDetected(PAICriticalException):
 class SerialConnectionOpenFailed(PAICriticalException):
     pass
 
-
+@pytest.fixture(scope='session', autouse=True)
 def async_loop_unhandled_exception_handler(loop, context):
     exception = context.get("exception")
 

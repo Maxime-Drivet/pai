@@ -2,8 +2,7 @@ argparse>=1.4.0
 chump>=1.6.0
 construct~=2.9.43
 flake8
-paho_mqtt>=1.5.0,<2
-
+paho_mqtt~=1.5.0
 pre-commit
 pushbullet.py>=0.11.0
 pyserial>=3.4
@@ -19,3 +18,4 @@ requests>=2.20.0
 require-python-3
 tox
 ws4py>=0.4.2
+pytest
